@@ -94,6 +94,7 @@ header {
     border-radius: 50%;
     border: 2px solid var(--accent-color);
     object-fit: cover;
+    display: flex;
 }
 
 .logo h1 {
