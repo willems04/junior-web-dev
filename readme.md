@@ -9,7 +9,7 @@ Each project represents a step in my journey to becoming a better web developer.
 # Projects
 
 
-1. FIRST WEBSITE
+1. PORTFOLIO WEBSITE
    Location: /Portfolio/
    
    My very first HTML, CSS, and JavaScript project! This is where it all began.
