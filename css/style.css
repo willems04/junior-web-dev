@@ -790,7 +790,6 @@ footer {
     }
 
     .services-grid,
-    .gallery-grid-full,
     .contact-info {
         grid-template-columns: 1fr;
     }
@@ -871,7 +870,8 @@ footer {
         text-align: center;
     }
 
-    .gallery-grid {
+    .gallery-grid,
+    .gallery-grid-full {
         grid-auto-columns: minmax(84%, 280px);
     }
 
