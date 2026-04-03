@@ -382,10 +382,6 @@ main {
     transition: var(--transition);
 }
 
-.fgallery-card:hover {
-    transform: scale(1.04);
-}
-
 .gallery-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(255, 107, 107, 0.3);
@@ -415,7 +411,7 @@ main {
 .fgallery-card img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     transition: var(--transition);
 }
@@ -787,6 +783,11 @@ footer {
 
     .fgallery-card {
         height: 250px;
+    }
+
+    .fgallery-card img {
+        object-fit: contain;
+        object-position: center;
     }
 
     .services-grid,
