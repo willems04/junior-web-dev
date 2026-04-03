@@ -739,6 +739,7 @@ footer {
         font-weight: 600;
         letter-spacing: 0.4px;
         text-transform: uppercase;
+        text-align: center;
     }
 
     .swipe-hint span {
