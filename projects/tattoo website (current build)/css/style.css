@@ -350,7 +350,7 @@ main {
 }
 
 .gallery-grid-full {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .gallery-card {
@@ -372,6 +372,20 @@ main {
     transition: var(--transition);
 }
 
+.fgallery-card {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    height: 280px;
+    border: 2px solid var(--accent-color);
+    transition: var(--transition);
+}
+
+.fgallery-card:hover {
+    transform: scale(1.04);
+}
+
 .gallery-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(255, 107, 107, 0.3);
@@ -385,14 +399,24 @@ main {
 .gallery-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     transition: var(--transition);
 }
 
 .gallery-card1 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    transition: var(--transition);
+}
+
+.fgallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
     transition: var(--transition);
 }
 
@@ -719,8 +743,7 @@ footer {
         font-size: 2rem;
     }
 
-    .gallery-grid,
-    .gallery-grid-full {
+    .gallery-grid {
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: minmax(78%, 300px);
@@ -749,7 +772,8 @@ footer {
     }
 
     .gallery-card,
-    .gallery-card1 {
+    .gallery-card1,
+    .fgallery-card {
         scroll-snap-align: start;
     }
 
@@ -761,7 +785,12 @@ footer {
         height: 250px;
     }
 
+    .fgallery-card {
+        height: 250px;
+    }
+
     .services-grid,
+    .gallery-grid-full,
     .contact-info {
         grid-template-columns: 1fr;
     }
@@ -842,8 +871,12 @@ footer {
         text-align: center;
     }
 
-    .gallery-grid,
-    .gallery-grid-full {
+    .gallery-grid {
         grid-auto-columns: minmax(84%, 280px);
+    }
+
+    .gallery-grid-full {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
