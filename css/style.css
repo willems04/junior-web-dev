@@ -353,16 +353,6 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.gallery-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: var(--border-radius);
-    height: 280px;
-    cursor: pointer;
-    border: 2px solid var(--accent-color);
-    transition: var(--transition);
-}
-
 .gallery-card1 {
     position: relative;
     overflow: hidden;
@@ -382,22 +372,9 @@ main {
     transition: var(--transition);
 }
 
-.gallery-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.3);
-}
-
 .gallery-card1:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(255, 107, 107, 0.3);
-}
-
-.gallery-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    transition: var(--transition);
 }
 
 .gallery-card1 img {
@@ -416,11 +393,6 @@ main {
     transition: var(--transition);
 }
 
-.gallery-card:hover img {
-    transform: scale(1.1);
-    filter: brightness(0.7);
-}
-
 .card-overlay {
     position: absolute;
     top: 0;
@@ -433,10 +405,6 @@ main {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-}
-
-.gallery-card:hover .card-overlay {
-    opacity: 1;
 }
 
 .card-overlay p {
@@ -767,14 +735,9 @@ footer {
         animation: swipe-arrow 1.2s ease-in-out infinite;
     }
 
-    .gallery-card,
     .gallery-card1,
     .fgallery-card {
         scroll-snap-align: start;
-    }
-
-    .gallery-card {
-        height: 250px;
     }
 
     .gallery-card1 {

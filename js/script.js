@@ -63,7 +63,6 @@ window.addEventListener('scroll', () => {
     
     document.querySelectorAll('section').forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         
         if (window.scrollY >= sectionTop - 200) {
             current = section.getAttribute('id');
@@ -109,44 +108,4 @@ document.querySelectorAll('.section, .gallery, .services, .hours, .contact, .cta
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
-});
-
-// Gallery card click handler - navigate to tattoos.html
-const galleryCards = document.querySelectorAll('.gallery-card');
-
-galleryCards.forEach(card => {
-    let touchStartX = 0;
-    let touchStartY = 0;
-    let hasSwiped = false;
-
-    card.addEventListener('touchstart', (e) => {
-        const touch = e.changedTouches[0];
-        touchStartX = touch.clientX;
-        touchStartY = touch.clientY;
-        hasSwiped = false;
-    }, { passive: true });
-
-    card.addEventListener('touchmove', (e) => {
-        const touch = e.changedTouches[0];
-        const deltaX = Math.abs(touch.clientX - touchStartX);
-        const deltaY = Math.abs(touch.clientY - touchStartY);
-
-        if (deltaX > 12 || deltaY > 12) {
-            hasSwiped = true;
-        }
-    }, { passive: true });
-
-    card.addEventListener('click', function() {
-        if (hasSwiped) {
-            hasSwiped = false;
-            return;
-        }
-
-        window.location.href = 'tattoos.html';
-    });
-});
-
-// Add cursor pointer to gallery cards
-galleryCards.forEach(card => {
-    card.style.cursor = 'pointer';
 });
