@@ -5,61 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>ws portfolio</title>
+    <title>Willem Samplonius | Portfolio</title>
     <link rel="icon" href="assets/image.jpg" type="image/jpg">
 </head>
 
 <body>
-    
-    <header>
-        <nav>
-            <ul class="header">
-                <li><a class="tattoo" href="#tattoo">Tattoo Website</a></li>
-                <li><a class="home" href="index.html">Home</a></li>
-                <li><a class="projects" href="projects.html"> My Projects</a></li>
+    <header class="site-header">
+        <nav class="nav-bar">
+            <a class="brand-mark" href="index.html">WS</a>
+            <ul class="nav-links">
+                <li><a class="is-active" href="index.html">Home</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="../tattoo website (current build)/index.html">Tattoo Website</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-    
-        <h1>Willem's Portfolio</h1>
-    
+    <main class="page-shell">
+        <section class="hero-section">
+            <div class="hero-copy">
+                <p class="eyebrow">Willem Samplonius • Junior Web Developer</p>
+                <h1>Willem's Portfolio</h1>
+                <p class="hero-text">
+                    I am early in the process, learning in public, and using each project to get better at layout, styling, and writing cleaner front-end code.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="projects.html">See My Work</a>
+                    <a class="button button-secondary" href="contact.html">Get In Touch</a>
+                </div>
+                <div class="hero-note">
+                    <p>Right now I am focused on the fundamentals: HTML structure, CSS layout, and building projects that improve every time I revisit them.</p>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-card">
+                        <strong>3</strong>
+                        <span>Projects built</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>HTML • CSS • JavaScript</strong>
+                        <span>Skills I am building</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>Every update counts</strong>
+                        <span>Always improving this site</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-photo-panel">
+                <div class="photo-frame">
+                    <img src="assets/meandblu.jpg" alt="Willem with Blu the cat.">
+                </div>
+                <p class="photo-caption">Me and Blu. It felt right to use something real instead of a generic profile image.</p>
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <article class="info-card">
+                <p class="section-label">About Me</p>
+                <h2>Still learning, still building</h2>
+                <p>
+                    Hello, I'm Willem. I am a junior developer who learns best by making things, spotting what looks off, and rebuilding them better the next time.
+                </p>
+            </article>
+
+            <article class="info-card info-card-accent">
+                <p class="section-label">Contact</p>
+                <h2>Open to feedback</h2>
+                <p>If you want to reach out, follow my progress, or point out something I can improve, email is the best place to start.</p>
+                <a class="contact-link" href="mailto:willemsamplonius@outlook.com">willemsamplonius@outlook.com</a>
+            </article>
+        </section>
+
+        <section class="section-heading">
+            <p class="section-label">Selected Work</p>
+            <h2>Projects that show where I am right now</h2>
+            <p class="section-intro">These are not finished career pieces. They are the projects I am using to improve one skill at a time.</p>
+        </section>
+
+        <section class="project-grid">
+            <article class="project-card project-card-featured">
+                <p class="project-kicker">Portfolio</p>
+                <h3>This Portfolio Website</h3>
+                <p>
+                    This site is both a portfolio and a practice space. I use it to test better layouts, cleaner styling, and clearer writing as I learn.
+                </p>
+                <a class="text-link" href="projects.html">Read more about this project</a>
+            </article>
+
+            <article class="project-card">
+                <p class="project-kicker">Client Style Build</p>
+                <h3>Tattoo Business Website</h3>
+                <p>
+                    A branding-focused site in active development, built to practice mood, page flow, and a stronger visual identity for a real-world style of business.
+                </p>
+                <a class="text-link" href="../tattoo website (current build)/index.html">Open the tattoo website</a>
+            </article>
+
+            <article class="project-card">
+                <p class="project-kicker">JavaScript Practice</p>
+                <h3>Calculator Application</h3>
+                <p>
+                    A calculator made with HTML, CSS, and JavaScript to give me hands-on practice with logic, interaction, and making small features actually work.
+                </p>
+                <a class="text-link" href="../calculator web/index.html">Launch the calculator</a>
+            </article>
+        </section>
     </main>
 
-        <img src="assets/meandblu.jpg" style="width: 300px;height:300px;">
+    <footer class="site-footer">
+        <p>Built by Willem Samplonius. More iterations are coming.</p>
+    </footer>
 
-        <h2>About Me</h2>
-            <p>Hello! I'm Willem, a junior web developer passionate about creating beautiful and functional websites.</p>
-
-    
-
-        <h2>Contact</h2>
-            <p>Email: willemsamplonius@outlook.com</p>
-    
-     
-        <h2>Projects</h2>
-    <div class="project-info">
-            <p>All the files for said projects are attached in the repository.</p>
-    </div>
-        <h3>Project 1: This Portfolio Website</h3>
-
-            <p>(April of 2026) I have just begun learning HTML and CSS. When I feel confident with the basics and complexities of these languages, I plan on learning JavaScript as well.</p>
-            <p>I built a personal website to showcase my skills and projects. And I plan to continue improving it over time as I gain more experience.</p>
-    
-    
-        <h3>Project 2: Tattoo Business Website</h3>
-            <p>This project is currently in progress.</p>
-
-        <h3>Project 3: Calculator Application</h3>
-            <p>
-            With the guidance of a youtube tutorial, I built a simple calculator application using HTML CSS and JavaScript. 
-            <br> It can perform basic arithmetic operations such as addition, subtraction, multiplication, and division. 
-            <br> I plan to add more features to it in the future, such as a history of calculations and support for more complex operations.
-            </p>
-
+    <script src="js/script.js"></script>
 </body>
-
-<script src="js/script.js"></script>
-
 </html>
