@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact | Conrad's Ink</title>
+	<meta name="description" content="Contact Conrad's Ink to book a tattoo consultation in Auckland.">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="icon" href="assets/fillerimage.png" type="image/png">
+</head>
+<body>
+	<div class="site-bg" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<nav class="site-nav" aria-label="Main navigation">
+			<a class="brand" href="index.html" aria-label="Conrad's Ink home page">
+				<img src="assets/fillerimage.png" alt="Conrad's Ink logo" class="brand-mark">
+				<span class="brand-wordmark">Conrad's Ink</span>
+			</a>
+
+			<button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<ul class="site-menu" id="site-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="tattoos.html">Tattoos</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="page-hero reveal">
+			<p class="kicker">Contact</p>
+			<h1>Let's build your next tattoo</h1>
+			<p class="lead">Send references, placement ideas, and size to get your consultation started.</p>
+		</section>
+
+		<section class="contact-layout reveal">
+			<article class="contact-card">
+				<i class="fas fa-phone"></i>
+				<h2>Phone</h2>
+				<p><a href="tel:+64123456789">+64 123 456 789</a></p>
+			</article>
+			<article class="contact-card">
+				<i class="fab fa-instagram"></i>
+				<h2>Instagram</h2>
+				<p><a href="https://instagram.com/inkz.tattooartist" target="_blank" rel="noreferrer">@inkz.tattooartist</a></p>
+			</article>
+			<article class="contact-card">
+				<i class="fas fa-envelope"></i>
+				<h2>Email</h2>
+				<p><a href="mailto:conrad@tattoostudio.com">conrad@tattoostudio.com</a></p>
+			</article>
+			<article class="contact-card">
+				<i class="fas fa-map-pin"></i>
+				<h2>Location</h2>
+				<p>Auckland, New Zealand<br>Travel appointments available</p>
+			</article>
+		</section>
+
+		<section class="section-block booking-form-wrap reveal" id="booking">
+			<div class="section-heading">
+				<p class="kicker">Booking Form</p>
+				<h2>Request your tattoo consultation</h2>
+			</div>
+
+			<form id="booking-form" class="booking-form" novalidate>
+				<div class="form-row two-col">
+					<div class="form-field">
+						<label for="fullName">Full Name</label>
+						<input id="fullName" name="fullName" type="text" autocomplete="name" required>
+					</div>
+					<div class="form-field">
+						<label for="email">Email</label>
+						<input id="email" name="email" type="email" autocomplete="email" required>
+					</div>
+				</div>
+
+				<div class="form-row two-col">
+					<div class="form-field">
+						<label for="phone">Phone</label>
+						<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional">
+					</div>
+					<div class="form-field">
+						<label for="preferredDate">Preferred Date / Month</label>
+						<input id="preferredDate" name="preferredDate" type="text" placeholder="e.g. June 2026" required>
+					</div>
+				</div>
+
+				<div class="form-row three-col">
+					<div class="form-field">
+						<label for="placement">Placement</label>
+						<input id="placement" name="placement" type="text" placeholder="Forearm, calf, chest..." required>
+					</div>
+					<div class="form-field">
+						<label for="size">Approx Size (cm)</label>
+						<input id="size" name="size" type="text" placeholder="10 x 8" required>
+					</div>
+					<div class="form-field">
+						<label for="style">Style</label>
+						<select id="style" name="style" required>
+							<option value="" selected disabled>Select style</option>
+							<option value="Blackwork">Blackwork</option>
+							<option value="Fine line">Fine line</option>
+							<option value="Japanese inspired">Japanese inspired</option>
+							<option value="Custom illustrative">Custom illustrative</option>
+							<option value="Unsure / need guidance">Unsure / need guidance</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-field">
+						<label for="idea">Tattoo Idea / Notes</label>
+						<textarea id="idea" name="idea" rows="6" placeholder="Describe your concept, references, and any must-have elements." required></textarea>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<label class="checkbox-field" for="consent">
+						<input id="consent" name="consent" type="checkbox" required>
+						<span>I confirm the details above are accurate and I am ready for a consultation response.</span>
+					</label>
+				</div>
+
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary">Send booking request</button>
+					<p id="booking-status" class="booking-status" aria-live="polite"></p>
+				</div>
+			</form>
+		</section>
+
+		<section class="section-block reveal">
+			<div class="section-heading">
+				<p class="kicker">Booking Tips</p>
+				<h2>To get a faster quote include:</h2>
+			</div>
+			<ul class="feature-list">
+				<li>Placement on body and approximate size in centimeters.</li>
+				<li>Style direction and 2-3 reference images.</li>
+				<li>Preferred month or date range for your appointment.</li>
+			</ul>
+		</section>
+	</main>
+
+	<a href="contact.html#booking" class="floating-cta">Book Now</a>
+
+	<footer class="site-footer">
+		<p>&copy; <span data-year></span> Conrad's Ink. All rights reserved.</p>
+		<p>Custom Tattoos | Auckland, New Zealand</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

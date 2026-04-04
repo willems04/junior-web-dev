@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tattoos | Conrad's Ink</title>
+    <meta name="description" content="Explore the tattoo portfolio from Conrad's Ink. Click any image for full preview.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="assets/fillerimage.png" type="image/png">
+</head>
+<body>
+    <div class="site-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Conrad's Ink home page">
+                <img src="assets/fillerimage.png" alt="Conrad's Ink logo" class="brand-mark">
+                <span class="brand-wordmark">Conrad's Ink</span>
+            </a>
+
+            <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="site-menu" id="site-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tattoos.html">Tattoos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero reveal">
+            <p class="kicker">Portfolio</p>
+            <h1>Gallery of custom work</h1>
+            <p class="lead">Tap or click any image to open full-screen preview.</p>
+        </section>
+
+        <section class="section-block reveal">
+            <div class="section-heading">
+                <p class="kicker">Tattoo Gallery</p>
+                <h2>Selected pieces</h2>
+            </div>
+
+            <div class="tattoo-grid">
+                <button class="gallery-item" type="button"><img src="assets/cd1.jpg" alt="Linework rabbit tattoo sketch"></button>
+                <button class="gallery-item" type="button"><img src="assets/cd2.jpg" alt="Fantasy creature sketch"></button>
+                <button class="gallery-item" type="button"><img src="assets/cd3.jpg" alt="Dragon style concept sketch"></button>
+                <button class="gallery-item" type="button"><img src="assets/cd4.jpg" alt="Character style sketch"></button>
+                <button class="gallery-item" type="button"><img src="assets/cd5.jpg" alt="Dragon head tattoo sketch"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct1.jpg" alt="Shaded tiger tattoo"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct2.jpg" alt="Leopard tattoo design"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct3.jpg" alt="Plush rabbit style tattoo"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct4.jpg" alt="Cow character tattoo"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct5.jpg" alt="Quote text tattoo"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct6.jpg" alt="Dragon linework tattoo"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct7a.jpg" alt="Rabbit and moth tattoos"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct7b.jpg" alt="Fish and flower tattoo"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct7c.jpg" alt="Floral bell tattoo"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct8.jpg" alt="Dragon outline piece"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct9.jpg" alt="Shaded dragon tattoo"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct10.jpg" alt="Blackwork dragon tattoo"></button>
+                <button class="gallery-item" type="button"><img src="assets/ct11.jpg" alt="Ornamental cat tattoo"></button>
+            </div>
+        </section>
+    </main>
+
+    <a href="contact.html#booking" class="floating-cta">Book Now</a>
+
+    <div class="lightbox" id="gallery-lightbox" aria-hidden="true">
+        <button class="lightbox-close" type="button" aria-label="Close preview">&times;</button>
+        <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">&#10095;</button>
+        <img src="" alt="" class="lightbox-image">
+        <p class="lightbox-caption"></p>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span data-year></span> Conrad's Ink. All rights reserved.</p>
+        <p>Custom Tattoos | Auckland, New Zealand</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
