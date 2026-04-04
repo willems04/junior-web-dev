@@ -215,3 +215,21 @@ Have questions or suggestions? Feel free to reach out!
 
 Happy exploring! 🚀
 
+<br>
+<br>
+<br>
+
+# DONATIONS FOR FULL STACK DEV COURSE
+
+<br>
+
+I placed this at the bottom because I do not expect donations or want anyone to feel pressured; however, if you have spare crypto and would like to support my full stack journey, you are welcome to donate to one of the three wallets below, and if that is not convenient, no problem at all.
+<dl>
+<dt> •BTC </dt>
+   <dd> bc1qu5z0z0jtclfqne287fwvzrkrpflphn2qec7y74 </dd>
+<dt> •ETH </dt>
+   <dd> 0xF98f41cddBB865963f7bB573DA47eE8C22F1eDEb </dd>
+<dt> •XRP </dt>
+   <dd> rPrrUyQb1TYa5pQ3853AXRncjXsQSCVb1Z </dd>
+
+</dl>
