@@ -196,7 +196,13 @@ learned previously and introduces new concepts.
 <br>
 
 <dt>• Build tools and version control workflows </dt>
+
+<br>
+
 <dt>• Responsive design and mobile optimization </dt>
+
+<br>
+
 </dl>
 
 # FEEL FREE TO EXPLORE!
