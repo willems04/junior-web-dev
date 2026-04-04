@@ -190,6 +190,11 @@ learned previously and introduces new concepts.
 
 <br>
 
+<dt>• jQuery, PHP, and MySQL </dt>
+   <dd> (DOM libraries, server-side scripting, relational databases) </dd>
+
+<br>
+
 <dt>• Build tools and version control workflows </dt>
 <dt>• Responsive design and mobile optimization </dt>
 </dl>
