@@ -76,10 +76,11 @@ function setupSendEmailButton() {
 
 	var recipient = sendEmailButton.getAttribute('data-mailto') || 'willemsamplonius@outlook.com';
 	var subject = sendEmailButton.getAttribute('data-subject') || 'Portfolio Contact';
+	var expectedHref = 'mailto:' + encodeURIComponent(recipient) + '?subject=' + encodeURIComponent(subject);
 
-	sendEmailButton.addEventListener('click', function () {
-		window.location.href = 'mailto:' + encodeURIComponent(recipient) + '?subject=' + encodeURIComponent(subject);
-	});
+	if (sendEmailButton.getAttribute('href') !== expectedHref) {
+		sendEmailButton.setAttribute('href', expectedHref);
+	}
 }
 
 function setupBrandDropdown() {
@@ -92,6 +93,8 @@ function setupBrandDropdown() {
 	if (!toggle) {
 		return;
 	}
+
+	var dropdownItems = dropdown.querySelectorAll('.brand-dropdown-item');
 
 	function setOpenState(isOpen) {
 		dropdown.classList.toggle('is-open', isOpen);
@@ -113,6 +116,12 @@ function setupBrandDropdown() {
 		if (event.key === 'Escape') {
 			setOpenState(false);
 		}
+	});
+
+	dropdownItems.forEach(function (item) {
+		item.addEventListener('click', function () {
+			setOpenState(false);
+		});
 	});
 }
 

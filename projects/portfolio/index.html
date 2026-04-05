@@ -4,52 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Willem Samplonius portfolio website featuring web development projects, learning progress, and contact details.">
+    <meta name="theme-color" content="#081321">
     <link rel="stylesheet" href="css/style.css">
     <title>Willem Samplonius | Portfolio</title>
     <link rel="icon" href="assets/image.jpg" type="image/jpg">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-        <nav class="nav-bar">
-            <div class="brand-dropdown">
-                <button class="brand-mark" type="button" aria-expanded="false" aria-controls="brand-dropdown-menu">WS</button>
-                <div class="brand-dropdown-menu" id="brand-dropdown-menu">
-                    <a class="brand-dropdown-item" href="#">Filler Box 1</a>
-                    <a class="brand-dropdown-item" href="#">Filler Box 2</a>
-                    <a class="brand-dropdown-item" href="#">Filler Box 3</a>
-                    <a class="brand-dropdown-item" href="#">Filler Box 4</a>
-                </div>
-            </div>
-            <a class="header-txt" href="https://github.com/willems04">Powered By GitHub</a>
+        <nav class="nav-bar" aria-label="Primary">
+            <div class="brand-mark" aria-hidden="true">WS</div>
+            <a class="header-txt" href="https://github.com/willems04" target="_blank" rel="noopener noreferrer" aria-label="Open Willem's GitHub profile in a new tab">Powered By GitHub</a>
             <ul class="nav-links">
-                <li><a class="is-active" href="index.html">Home</a></li>
+                <li><a class="is-active" href="index.html" aria-current="page">Home</a></li>
                 <li><a href="projects.html">My Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="donations.html">Donations</a></li>
-                <li><a href="../tattoo website (current build)/index.html">Tattoo Website</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="page-shell">
+    <main id="main-content" class="page-shell">
+        <section class="tattoo-link-box" aria-label="Featured project link">
+            <p class="tattoo-link-label">Featured Build</p>
+            <h2 class="tattoo-link-title">Tattoo Business Website</h2>
+            <p class="tattoo-link-description">A branding-focused build where I am practicing visual identity, page flow, and a stronger client-ready presentation.</p>
+            <img class="tattoo-link-image" src="assets/ct.png" alt="A preview of the tattoo website homepage.">
+            <a class="tattoo-link-action" href="../tattoo website (current build)/index.html">Open Tattoo Website</a>
+        </section>
+
         <section class="hero-section">
             <div class="hero-copy">
                 <p class="eyebrow">Willem Samplonius • Junior Web Developer</p>
                 <h1>Willem's Portfolio</h1>
                 <p class="hero-text">
-                    I am early in the process, learning in public, and using each project to get better at layout, styling, and writing cleaner front-end code.
+                    I am early in my developer journey and learning in public. Every project helps me improve my layout decisions, styling, and front-end code quality.
                 </p>
                 <div class="hero-actions">
                     <a class="button button-primary" href="projects.html">See My Work</a>
                     <a class="button button-secondary" href="contact.html">Get In Touch</a>
                 </div>
                 <div class="hero-note">
-                    <p>Right now I am focused on the fundamentals: HTML structure, CSS layout, and building projects that improve every time I revisit them.</p>
+                    <p>Right now I am focused on the fundamentals: solid HTML structure, clean CSS layout, and improving each project every time I revisit it.</p>
                 </div>
                 <div class="stat-row">
                     <div class="stat-card">
-                        <strong>3</strong>
+                        <strong>4</strong>
                         <span>Projects built</span>
                     </div>
                     <div class="stat-card">
@@ -76,14 +78,14 @@
                 <p class="section-label">About Me</p>
                 <h2>Still learning, still building</h2>
                 <p>
-                    Hello, I'm Willem. I am a junior developer who learns best by making things, spotting what looks off, and rebuilding them better the next time.
+                    Hi, I am Willem. I learn best by building real projects, spotting what feels off, and coming back with a better version.
                 </p>
             </article>
 
             <article class="info-card info-card-accent">
                 <p class="section-label">Contact</p>
                 <h2>Open to feedback</h2>
-                <p>If you want to reach out, follow my progress, or point out something I can improve, email is the best place to start.</p>
+                <p>If you want to connect, follow my progress, or share feedback, email is the best place to start.</p>
                 <a class="contact-link" href="mailto:willemsamplonius@outlook.com">willemsamplonius@outlook.com</a>
             </article>
         </section>
@@ -91,7 +93,7 @@
         <section class="section-heading">
             <p class="section-label">Selected Work</p>
             <h2>Projects that show where I am right now</h2>
-            <p class="section-intro">These are not finished career pieces. They are the projects I am using to improve one skill at a time.</p>
+            <p class="section-intro">These are not final portfolio pieces. They are active projects I use to improve one skill at a time.</p>
         </section>
 
         <section class="project-grid">
@@ -99,7 +101,7 @@
                 <p class="project-kicker">Portfolio</p>
                 <h3>This Portfolio Website</h3>
                 <p>
-                    This site is both a portfolio and a practice space. I use it to test better layouts, cleaner styling, and clearer writing as I learn.
+                    This site is both my portfolio and my practice space. I use it to test stronger layouts, cleaner styling, and clearer writing as I improve.
                 </p>
                 <a class="text-link" href="projects.html">Read more about this project</a>
             </article>
@@ -108,7 +110,7 @@
                 <p class="project-kicker">Client Style Build</p>
                 <h3>Tattoo Business Website</h3>
                 <p>
-                    A branding-focused site in active development, built to practice mood, page flow, and a stronger visual identity for a real-world style of business.
+                    A branding-focused site in active development, built to practice atmosphere, page flow, and a stronger visual identity for a real-world business style.
                 </p>
                 <a class="text-link" href="../tattoo website (current build)/index.html">Open the tattoo website</a>
             </article>
@@ -117,18 +119,27 @@
                 <p class="project-kicker">JavaScript Practice</p>
                 <h3>Calculator Application</h3>
                 <p>
-                    A calculator made with HTML, CSS, and JavaScript to give me hands-on practice with logic, interaction, and making small features actually work.
+                    A calculator built with HTML, CSS, and JavaScript to give me practical experience with logic, interaction, and shipping small features that work.
                 </p>
                 <a class="text-link" href="../calculator web/index.html">Launch the calculator</a>
+            </article>
+
+            <article class="project-card project-card-featured">
+                <p class="project-kicker">Security Utility</p>
+                <h3>Password Generator</h3>
+                <p>
+                    A browser-based password generator with configurable options, batch generation, and built-in strength checks using secure randomness.
+                </p>
+                <a class="text-link" href="password-generator.html">Open password generator</a>
             </article>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>Built by Willem Samplonius. More iterations are coming.</p>
+        <p>Built by Willem Samplonius. More iterations are on the way.</p>
     </footer>
 
-    <a class="mobile-github-bar" href="https://github.com/willems04">Powered By GitHub</a>
+    <a class="mobile-github-bar" href="https://github.com/willems04" target="_blank" rel="noopener noreferrer" aria-label="Open Willem's GitHub profile in a new tab">Powered By GitHub</a>
 
     <script src="js/script.js"></script>
 </body>

@@ -4,40 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project archive for Willem Samplonius showcasing portfolio work, in-progress builds, and upcoming web development ideas.">
+    <meta name="theme-color" content="#081321">
     <link rel="stylesheet" href="css/style.css">
     <title>Willem Samplonius | Projects</title>
     <link rel="icon" href="assets/image.jpg" type="image/jpg">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-        <nav class="nav-bar">
-            <div class="brand-dropdown">
-                <button class="brand-mark" type="button" aria-expanded="false" aria-controls="brand-dropdown-menu">WS</button>
-                <div class="brand-dropdown-menu" id="brand-dropdown-menu">
-                    <a class="brand-dropdown-item" href="#">Filler Box 1</a>
-                    <a class="brand-dropdown-item" href="#">Filler Box 2</a>
-                    <a class="brand-dropdown-item" href="#">Filler Box 3</a>
-                    <a class="brand-dropdown-item" href="#">Filler Box 4</a>
-                </div>
-            </div>
-            <a class="header-txt" href="https://github.com/willems04">Powered By GitHub</a>
+        <nav class="nav-bar" aria-label="Primary">
+            <div class="brand-mark" aria-hidden="true">WS</div>
+            <a class="header-txt" href="https://github.com/willems04" target="_blank" rel="noopener noreferrer" aria-label="Open Willem's GitHub profile in a new tab">Powered By GitHub</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="is-active" href="projects.html">My Projects</a></li>
+                <li><a class="is-active" href="projects.html" aria-current="page">My Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="donations.html">Donations</a></li>
-                <li><a href="../tattoo website (current build)/index.html">Tattoo Website</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="page-shell page-shell-compact">
+    <main id="main-content" class="page-shell page-shell-compact">
         <section class="section-heading section-heading-left">
             <p class="section-label">Project Archive</p>
             <h1>Work, practice, and what comes next</h1>
             <p class="section-intro">
-                These projects are a snapshot of where my skills are now, what I am practicing, and where I want to push next.
+                These projects are a snapshot of where my skills are now, what I am actively practicing, and where I want to push next.
             </p>
         </section>
 
@@ -46,7 +40,7 @@
                 <p class="project-kicker">Portfolio</p>
                 <h2>This Portfolio Website</h2>
                 <p>
-                    My portfolio is where I experiment the most. I use it to refine layout, hierarchy, color, spacing, and to make my work feel more like me.
+                    My portfolio is where I experiment the most. I use it to refine layout, hierarchy, color, and spacing, and to make my work feel more like me.
                 </p>
                 <p class="project-meta">Focus: responsive layout, typography, clearer presentation</p>
             </article>
@@ -65,16 +59,18 @@
                 <p class="project-kicker">JavaScript</p>
                 <h2>Calculator Application</h2>
                 <p>
-                    Built with tutorial guidance, then used as a base for understanding events, arithmetic logic, and how small interactive tools should behave.
+                    Built with tutorial guidance, then expanded as a base for understanding events, arithmetic logic, and how small interactive tools should behave.
                 </p>
                 <p class="project-meta">Focus: DOM events, logic, interaction</p>
                 <a class="text-link" href="../calculator web/index.html">Open calculator</a>
             </article>
 
             <article class="project-card project-card-muted">
-                <p class="project-kicker">Next Up</p>
-                <h2>Landing Page Concept</h2>
-                <p>A future build focused on stronger hero sections, sharper messaging, and a more confident first impression.</p>
+                <p class="project-kicker">JavaScript Utility</p>
+                <h2>Password Generator</h2>
+                <p>A browser-based password generator with configurable options, batch creation, and built-in strength checks.</p>
+                <p class="project-meta">Focus: secure randomness, input validation, practical UX</p>
+                <a class="text-link" href="password-generator.html">Open password generator</a>
             </article>
 
             <article class="project-card project-card-muted">
@@ -86,16 +82,16 @@
             <article class="project-card project-card-muted">
                 <p class="project-kicker">Next Up</p>
                 <h2>Component Library</h2>
-                <p>A reusable collection of buttons, cards, sections, and form patterns to make future projects cleaner and more consistent.</p>
+                <p>A reusable set of buttons, cards, sections, and form patterns to make future projects cleaner and more consistent.</p>
             </article>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>New work will be added here as it is completed.</p>
+        <p>New work will be added here as I complete it.</p>
     </footer>
 
-    <a class="mobile-github-bar" href="https://github.com/willems04">Powered By GitHub</a>
+    <a class="mobile-github-bar" href="https://github.com/willems04" target="_blank" rel="noopener noreferrer" aria-label="Open Willem's GitHub profile in a new tab">Powered By GitHub</a>
 
     <script src="js/script.js"></script>
 </body>
